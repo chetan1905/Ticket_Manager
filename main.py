@@ -1,11 +1,13 @@
 # This class serves as the entry/execution point for this project
-from ticket import Ticket
-from ticket_manager import Ticket_Manager
+from db_queries import init_table
 
-def main(): # organize the entire functionality inside this function
+class main(): # organize the entire functionality inside this function
     
-    Ticket()
-    Ticket_Manager()    
+    def __init__(self):
+        print("In main")
+        init_table()
+
+
 
 if __name__ == "__main__": # Entry Point
     
